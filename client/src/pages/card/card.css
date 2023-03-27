@@ -1,0 +1,162 @@
+.cardContainer {
+    padding: 50px;
+    display: flex;
+}
+
+.cardLeft {
+    flex: 2;
+}
+
+.cardRight {
+    flex: 1;
+}
+
+.cardTableImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cardTable {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.cardTableName {
+    font-weight: 500;
+    color: #d1411e;
+    font-size: 18px;
+    
+}
+
+.cardTableTotal {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cardWrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: #444242;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cardRightTotalText {
+    margin-bottom: 10px;
+}
+
+.cardRightTotalTextTitle {
+    margin-right: 10px;
+}
+
+
+.cardButton {
+    height: 30px;
+    color: #d1411e;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.paymentMethods {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payButton {
+    padding:10px 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: none;
+    color: teal;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .cardTable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardTableTitle {
+        display: none;
+    }
+
+    .cardTableRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .cardTableName, .cardTableTotal {
+        font-size: 24px;
+    }
+
+    .cardTableImg {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .cardWrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .cardTableExtras, .cardTablePrice, .cardTableQuantity {
+        font-size: 22px;
+    }
+
+    .cardTablePrice::before {
+        content: "Price: ";
+        font-weight: 500;
+    }
+    .cardTableQuantity::before {
+        content: "Quantity: ";
+        font-weight: 500;
+    }
+    .cardTableTotal::before {
+        content: "Total: ";
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 480px) {
+
+
+
+
+
+
+    .cardTableImg {
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .cardWrapper {
+        width: 100%;
+    }
+
+    .cardTableExtras, .cardTablePrice, .cardTableQuantity {
+        font-size: 22px;
+    }
+
+}
+

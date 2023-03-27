@@ -1,0 +1,98 @@
+.addProductContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(197, 197, 197, .56);
+}
+
+.addProductWrapper {
+    width: 500px;
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.addProductClose {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.addPizzaItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.addProductLabel {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.addProductInput {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addProductInputSm {
+    width: 25%;
+}
+
+.extraContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.extraItems {
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.extraItem {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid tomato;
+    background-color: #fff;
+    color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addProductButton {
+    width: 25%;
+    border: none;
+    background-color: teal;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 0;
+    align-self: flex-end;
+}

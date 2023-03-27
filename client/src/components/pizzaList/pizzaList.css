@@ -1,0 +1,35 @@
+.pizzaListContainer {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizzaListDesc {
+    font-size: 24px;
+    color: #444;
+    width: 70%;
+}
+
+.pizzaListWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .pizzaListWrapper {
+        flex-direction: column;
+    }
+
+    .pizzaListTitle {
+        text-align: center;
+    }
+
+    .pizzaListDesc {
+        width: 90%;
+        text-align: center;
+    }
+}

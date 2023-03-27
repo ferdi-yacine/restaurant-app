@@ -1,0 +1,8 @@
+.adminButtonAdd {
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    background-color: teal;
+    border-radius: 5px;
+}

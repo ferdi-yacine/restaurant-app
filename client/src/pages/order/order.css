@@ -1,0 +1,129 @@
+.orderContainer {
+    padding: 50px;
+    display: flex;
+}
+
+.orderLeft {
+    flex: 2;
+}
+
+.orderRight {
+    flex: 1;
+}
+
+.orderButton {
+    background-color: #fff;
+    height: 30px;
+    color: teal;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.orderButton:disabled {
+    cursor: not-allowed;
+}
+
+.orderTable {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.orderRow:last-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.failled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .3;
+}
+
+.failled .orderStatusCheckedIcon, .inProgress .orderStatusCheckedIcon {
+    display: none;
+}
+
+.orderStatusIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.orderStatusCheckedIcon {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .orderContainer {
+        flex-direction: column;
+    }
+
+    .orderTableTrTitlr {
+        display: none;
+    }
+
+    .orderTableTr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .orderTableId::before {
+        content: "Order ID: ";
+        font-weight: 500;
+    } 
+    .orderTableName::before {
+        content: "Customers: ";
+        font-weight: 500;
+    } 
+    .orderTableAddress::before {
+        content: "Address: ";
+        font-weight: 500;
+    } 
+    .orderTableTotal::before {
+        content: "Total: ";
+        font-weight: 500;
+    }
+    
+    .orderRow:last-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .done, .inProgress, .failled {
+        margin-bottom: 20px;
+    }
+
+}

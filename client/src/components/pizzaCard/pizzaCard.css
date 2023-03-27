@@ -1,0 +1,68 @@
+.pizzaCardContainer {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.pizzaCardImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.pizzaCardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.pizzaCardPrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.pizzaCardDesc {
+    text-align: center;
+    color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    .pizzaCardContainer {
+        width: 100%;
+    }
+
+    .pizzaCardTitle {
+        font-size: 25px;
+    }
+    .pizzaCardPrice {
+        font-size: 20px;
+    }
+
+    .pizzaCardDesc {
+        font-size: 20px;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+    .pizzaCardContainer {
+        width: 100%;
+    }
+
+    .pizzaCardTitle {
+        font-size: 30px;
+    }
+    .pizzaCardPrice {
+        font-size: 24px;
+    }
+
+    .pizzaCardDesc {
+        font-size: 24px;
+    }
+}

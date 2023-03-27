@@ -1,0 +1,39 @@
+.adminContainer {
+    padding: 50px;
+    display: flex;
+}
+
+.adminItem {
+    flex: 1;
+}
+
+.adminPizzaImg {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.adminTable {
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.adminButton {
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.adminButton:first-child {
+    background-color: teal;
+    margin-right: 10px;
+}
+
+.adminButton:last-child {
+    background-color: crimson;
+}
