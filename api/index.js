@@ -18,7 +18,7 @@ const connect = async () => {
 }
 
 const corsOptions = {
-    origin: "YOUR_CLIENT_URL",
+    origin: "https://yallarestaurant.netlify.app",
     credentials: true,
 }
 
