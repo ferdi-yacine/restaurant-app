@@ -22,7 +22,7 @@ export const Navbar = () => {
         </div>
         <div className="navbarTexts">
           <div className="navbarText">ORDER NOW!</div>
-          <div className="navbarText navbarPhone">+214 58 74 96</div>
+          <div className="navbarText navbarPhone">+213 58 74 96 28</div>
         </div>
       </div>
       <div className="navbarItem">
